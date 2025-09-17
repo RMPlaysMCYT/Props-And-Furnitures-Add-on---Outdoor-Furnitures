@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Props And Furnitures Add-on - Outdoor Furnitures RP",
+    "description": "Generated from npx create-mc-bedrock",
+    "uuid": "cb54b03f-b80a-4b54-9ead-9ed440678874",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      30
+    ]
+  },
+  "modules": [
+    {
+      "description": "Generated from npx create-mc-bedrock",
+      "type": "resources",
+      "uuid": "5c4a32ea-12d7-4504-9eae-ec57f4efc9fb",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e829e893-48f4-4b20-bd43-92e4377e69d1",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
