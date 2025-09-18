@@ -6,12 +6,11 @@ import {
   system,
 } from "@minecraft/server";
 import * as btch from "@minecraft/server";
-import * as vec3 from "vec3";
+// import * as vec3 from "vec3";
 
 type CardinalDirection = "north" | "east" | "south" | "west";
 
-const SittableMob = "pafa:seat2";
-const Sittable_ACTOR_TYPE = SittableMob;
+const Sittable_ACTOR_TYPE = "pafa:pafa_seat2";
 
 const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.CustomComponentParameters): void => {
   const { block, dimension, player } = arg1;
@@ -35,7 +34,7 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
   try {
     height = centralHeightY + params.height;
   } catch {
-    height = centralHeightY + 1;
+    height = centralHeightY + 0.1;
   }
 
   const ChairLocationes = {
@@ -47,8 +46,8 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
   const ChairSittingPosition =
     dimension.getEntities({
       type: Sittable_ACTOR_TYPE,
-      closest: 2,
-      maxDistance: 2,
+      closest: 1,
+      maxDistance: 0.5,
       location: ChairLocationes,
     }).length > 0;
 
@@ -66,7 +65,7 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
       SittableSpawnEvent = `sittable_actor:r270`;
       break;
     case "west":
-      SittableSpawnEvent = `sittable_actor:90`;
+      SittableSpawnEvent = `sittable_actor:r90`;
       break;
     default:
       SittableSpawnEvent = "minecraft:entity_spawned";
@@ -85,7 +84,7 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
 };
 
 system.beforeEvents.startup.subscribe((InitEvent) => {
-  InitEvent.blockComponentRegistry.registerCustomComponent("pafa_outdoor:outdoor_chairInteract", {
+  InitEvent.blockComponentRegistry.registerCustomComponent("pafa_outdoor:ChairInteract", {
     onPlayerInteract,
   });
 });
