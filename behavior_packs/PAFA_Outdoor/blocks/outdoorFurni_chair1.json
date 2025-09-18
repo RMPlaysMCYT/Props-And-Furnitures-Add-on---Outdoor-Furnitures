@@ -34,6 +34,7 @@
       "minecraft:custom_components": ["pafa_outdoor:outdoor_chairInteract"],
       "tag:sittable": {},
       "tag:chair": {},
+      "tag:outdoor_chair": {},
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 10
       },
