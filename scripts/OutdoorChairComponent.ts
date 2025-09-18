@@ -85,7 +85,7 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
 };
 
 system.beforeEvents.startup.subscribe((InitEvent) => {
-  InitEvent.blockComponentRegistry.registerCustomComponent("pafa_outdoor:outdoor_chair", {
+  InitEvent.blockComponentRegistry.registerCustomComponent("pafa_outdoor:outdoor_chairInteract", {
     onPlayerInteract,
   });
 });
