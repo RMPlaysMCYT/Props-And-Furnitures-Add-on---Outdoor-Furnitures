@@ -1,10 +1,17 @@
-import { BlockComponentPlayerInteractEvent, BlockComponentTickEvent, BlockCustomComponent } from "@minecraft/server";
+import {
+  BlockComponentPlayerInteractEvent,
+  BlockComponentTickEvent,
+  BlockCustomComponent,
+  world,
+  system,
+} from "@minecraft/server";
 import * as btch from "@minecraft/server";
 import * as vec3 from "vec3";
 
 type CardinalDirection = "north" | "east" | "south" | "west";
 
 const SittableMob = "pafa_seat";
+const Sittable_ACTOR_TYPE = SittableMob;
 
 const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.CustomComponentParameters): void => {
   const { block, dimension, player } = arg1;
@@ -37,8 +44,48 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
     z: centro.z,
   };
 
-  const ChairSittingPosition = dimension.getEntities({
-    type: Sittable_ACTOR_TYPE,
-    closest: 2,
+  const ChairSittingPosition =
+    dimension.getEntities({
+      type: Sittable_ACTOR_TYPE,
+      closest: 2,
+      maxDistance: 2,
+      location: ChairLocationes,
+    }).length > 0;
+
+  if (ChairSittingPosition) return;
+
+  const blockDirectiones = block.permutation.getState("minecraft:cardinal_direction") as CardinalDirection;
+
+  let SittableSpawnEvent: string;
+
+  switch (blockDirectiones) {
+    case "north":
+      SittableSpawnEvent = `sittable_anchor:r180`;
+      break;
+    case "east":
+      SittableSpawnEvent = `sittable_anchor:r270`;
+      break;
+    case "west":
+      SittableSpawnEvent = `sittable_anchor:90`;
+      break;
+    default:
+      SittableSpawnEvent = "minecraft:entity_spawned";
+      break;
+  }
+
+  const sittable_anchorArea = dimension.spawnEntity(Sittable_ACTOR_TYPE, ChairLocationes, {
+    spawnEvent: SittableSpawnEvent,
+  });
+
+  system.run(() => {
+    const rideable = sittable_anchorArea.getComponent("rideable");
+    if (!rideable) return;
+    rideable.addRider(player);
   });
 };
+
+system.beforeEvents.startup.subscribe((InitEvent) => {
+  InitEvent.blockComponentRegistry.registerCustomComponent("pafa_outdoor:outdoor_chair", {
+    onPlayerInteract,
+  });
+});
