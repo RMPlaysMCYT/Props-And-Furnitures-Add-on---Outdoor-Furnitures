@@ -15,6 +15,16 @@
       }
     },
     "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "texture": "pafa_outdoor_Chair1"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.outdoor_chair"
+      },
       "minecraft:loot": "loot_tables/outdoor_furni_chair_1.json",
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
