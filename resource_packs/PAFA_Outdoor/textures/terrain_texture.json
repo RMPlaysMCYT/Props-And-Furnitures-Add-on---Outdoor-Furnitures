@@ -9,6 +9,9 @@
     },
     "pafa_outdoor_Memoky": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_memoky"
+    },
+    "pafa_outdoor_Frontgatechair": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_frontgateChair"
     }
   }
 }
