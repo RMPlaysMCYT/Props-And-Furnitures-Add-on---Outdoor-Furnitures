@@ -6,6 +6,9 @@
   "texture_data": {
     "pafa_outdoor_Chair1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_chair"
+    },
+    "pafa_outdoor_Memoky": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_memoky"
     }
   }
 }

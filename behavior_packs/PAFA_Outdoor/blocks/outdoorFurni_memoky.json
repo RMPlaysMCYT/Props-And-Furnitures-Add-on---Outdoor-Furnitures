@@ -2,7 +2,7 @@
   "format_version": "1.21.60",
   "minecraft:block": {
     "description": {
-      "identifier": "pafa_outdoor:outdoorChair_1",
+      "identifier": "pafa_outdoor:outdoorMemoky",
       "menu_category": {
         "category": "construction",
         "is_hidden_in_commands": false
@@ -19,13 +19,13 @@
         "*": {
           "render_method": "alpha_test",
           "ambient_occlusion": false,
-          "texture": "pafa_outdoor_Chair1"
+          "texture": "pafa_outdoor_Memoky"
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.outdoor_chair"
+        "identifier": "geometry.outdoor_memoky"
       },
-      "minecraft:loot": "loot_tables/outdoor_furni_chair_1.json",
+      "minecraft:loot": "loot_tables/outdoor_furni_memoky.json",
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
         "size": [12, 7, 12]
