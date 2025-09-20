@@ -30,7 +30,7 @@ const NegaZPosLeft = {
   BACKWARD: BACKWARD,
 };
 
-const ChairConnectSystem = (arg1: BlockComponentTickEvent, arg2: ): void => {
+const ChairConnectSystem = (arg1: BlockComponentTickEvent): void => {
   const { block } = arg1;
   const directionLookOut = block.permutation.getState("minecraft:cardinal_direction");
   const directionOffSets = {
@@ -55,5 +55,5 @@ const ChairConnectSystem = (arg1: BlockComponentTickEvent, arg2: ): void => {
       tag: "outdoor_chair_east",
     },
   };
-  const OffSetPosition = directionOffSets[directionLookOut];
+  // const OffSetPosition = directionOffSets[directionLookOut];
 };
