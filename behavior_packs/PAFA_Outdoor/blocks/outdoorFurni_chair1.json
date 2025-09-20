@@ -28,7 +28,7 @@
       "minecraft:loot": "loot_tables/outdoor_furni_chair_1.json",
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [12, 7, 12]
+        "size": [12, 6, 12]
       },
       "minecraft:selection_box": true,
       "minecraft:custom_components": ["pafa_outdoor:ChairInteract"],
