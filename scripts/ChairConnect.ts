@@ -1,6 +1,7 @@
-import { world, BlockComponentTickEvent, system } from "@minecraft/server";
+import { world, BlockComponentTickEvent, CustomComponentParameters, system } from "@minecraft/server";
 import { LEFT, RIGHT } from "./vec3";
 import { BACKWARD, FORWARD } from "./vec3";
+import { UP, DOWN } from "./vec3";
 
 const XPosRight = {
   RIGHT: RIGHT,
@@ -30,7 +31,14 @@ const NegaZPosLeft = {
   BACKWARD: BACKWARD,
 };
 
-const ChairConnectSystem = (arg1: BlockComponentTickEvent): void => {
+const YPosUp = {
+  UP: UP,
+};
+const YPosDown = {
+  DOWN: DOWN,
+};
+
+const ChairConnectSystem = (arg1: BlockComponentTickEvent, arg2: CustomComponentParameters): void => {
   const { block } = arg1;
   const directionLookOut = block.permutation.getState("minecraft:cardinal_direction");
   const directionOffSets = {
@@ -55,5 +63,5 @@ const ChairConnectSystem = (arg1: BlockComponentTickEvent): void => {
       tag: "outdoor_chair_east",
     },
   };
-  // const OffSetPosition = directionOffSets[directionLookOut];
+  // const OffSetPosition = directionOffSets[arg2.directionLookOut];
 };
