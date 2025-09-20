@@ -12,6 +12,15 @@
     },
     "pafa_outdoor_Frontgatechair": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_frontgateChair"
+    },
+    "pafa_outdoor_coffee_table1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_coffeetable1"
+    },
+    "pafa_outdoor_coffee_table2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_coffeetable2"
+    },
+    "pafa_outdoor_dinning_table1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_dinningtable1"
     }
   }
 }
