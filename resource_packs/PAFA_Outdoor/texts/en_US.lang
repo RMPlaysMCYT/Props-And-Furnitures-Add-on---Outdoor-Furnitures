@@ -1,4 +1,5 @@
-item.starter:strawberry=Strawberry
-item.starter:strawberry_rotten=Rotten Strawberry
-item.starter:strawberry_seeds=Strawberry Seeds
-tile.starter:strawberry_crop.name=Strawberries
+tile.pafa_outdoor:outdoorChair_1.name=Outdoor Chair 1
+tile.pafa_outdoor:outdoorMemoky.name=Outdoor Memoky
+tile.pafa_outdoor:outdoorFrontgatechair.name=Outdoor Frontgate Chair
+
+outdoor_chair.out_of_range=You're Too Far Away, Stay with Steve

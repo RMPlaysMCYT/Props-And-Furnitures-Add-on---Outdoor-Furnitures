@@ -23,7 +23,7 @@
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.outdoor_frontgateChair"
+        "identifier": "geometry.outdoor_frontgate"
       },
       "minecraft:loot": "loot_tables/outdoor_furni_Frontgatechair.json",
       "minecraft:collision_box": {

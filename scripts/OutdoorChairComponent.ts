@@ -6,7 +6,7 @@ import {
   system,
 } from "@minecraft/server";
 import * as btch from "@minecraft/server";
-// import * as vec3 from "vec3";
+import * as vec3 from "./vec3";
 
 type CardinalDirection = "north" | "east" | "south" | "west";
 
@@ -20,14 +20,14 @@ const onPlayerInteract = (arg1: BlockComponentPlayerInteractEvent, arg2: btch.Cu
 
   const centro = block.center();
 
-  // if (vec3.distance(centro, player.location) > 2.5) {
-  //   if (block.hasTag("outdoor_chair")) {
-  //     player.onScreenDisplay.setActionBar({
-  //       translate: "outdoor_chair.out_of_range",
-  //     });
-  //   }
-  //   return;
-  // }
+  if (vec3.distance(centro, player.location) > 2.5) {
+    if (block.hasTag("outdoor_chair")) {
+      player.onScreenDisplay.setActionBar({
+        translate: "outdoor_chair.out_of_range",
+      });
+    }
+    return;
+  }
   const centralHeightY = centro.y;
 
   let height: number;

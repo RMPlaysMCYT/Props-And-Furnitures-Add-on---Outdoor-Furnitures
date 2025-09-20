@@ -1,5 +1,6 @@
 import { world, ItemComponentConsumeEvent, system } from "@minecraft/server";
 import "./OutdoorChairComponent";
+import "./ChairConnect";
 import * as vec3 from "vec3";
 // import { PAFA_OutDoorChairComponent } from "./OutdoorChairComponent";
 // world.beforeEvents.worldInitialize.subscribe((initEvent) => {
