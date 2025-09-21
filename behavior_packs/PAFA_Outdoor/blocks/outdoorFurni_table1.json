@@ -31,7 +31,6 @@
         "size": [16, 16, 16]
       },
       "minecraft:selection_box": true,
-      "minecraft:custom_components": ["pafa_outdoor:ChairInteract"],
       "tag:sittable": {},
       "tag:chair": {},
       "tag:outdoor_chair": {},
