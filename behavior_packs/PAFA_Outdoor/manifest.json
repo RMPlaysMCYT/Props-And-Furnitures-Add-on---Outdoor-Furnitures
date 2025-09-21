@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Props And Furnitures Add-on - Outdoor Furnitures BP",
+    "name": "pack.name",
     "description": "Generated from npx create-mc-bedrock",
     "uuid": "e829e893-48f4-4b20-bd43-92e4377e69d1",
     "version": [

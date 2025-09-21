@@ -7,6 +7,9 @@
     "pafa_outdoor_Chair1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_chair"
     },
+    "pafa_outdoor_Chair2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_chair2"
+    },
     "pafa_outdoor_Memoky": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_memoky"
     },
@@ -21,6 +24,12 @@
     },
     "pafa_outdoor_dinning_table1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_dinningtable1"
+    },
+    "pafa_outdoor_table1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_table1"
+    },
+    "pafa_outdoor_mat1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_mat1"
     }
   }
 }

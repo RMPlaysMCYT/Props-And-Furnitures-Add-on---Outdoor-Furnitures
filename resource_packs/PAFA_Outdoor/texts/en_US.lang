@@ -4,6 +4,12 @@ tile.pafa_outdoor:outdoorFrontgatechair.name=Outdoor Frontgate Chair
 tile.pafa_outdoor:outdoor_coffee_table1.name=Coffee Table 1
 tile.pafa_outdoor:outdoor_coffee_table2.name=Coffee Table 2
 tile.pafa_outdoor:outdoor_dinning_table1.name= Dinning Table 1
+tile.pafa_outdoor:outdoorChair_2.name=Outdoor Chair 2
+tile.pafa_outdoor:outdoor_table1.name=Outdoor Table 1
+tile.pafa_outdoor:outdoor_mat1.name=Outdoor Mat 1
+
 ## tile.pafa_outdoor:
 
 outdoor_chair.out_of_range=You're Too Far Away, Stay with Steve
+
+pack.name=Props And Furnitures Add-on - Outdoor Furnitures RP
