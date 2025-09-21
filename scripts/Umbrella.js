@@ -1,12 +1,12 @@
-import { airBlocks, DirectionalStates, oppositeDirection, itemDecreased, BlockTypeVariants } from "./Others";
-// import {  } from '../util/utils';
+import { airBlocks, DirectionalStates, oppositeDirectiones, itemDecreased, BlockTypeVariants } from "./Others";
+/// Based From DECODROP ADD-ON BY EndXenocDev and Cereal Drop
 import { BlockPermutation, Direction, EquipmentSlot } from "@minecraft/server";
 
 export class DropBreakBlockPost {
   onPlayerDestroy(e) {
     const { destroyedBlockPermutation, block } = e;
     const direction = destroyedBlockPermutation.getState(DirectionalStates);
-    const lampPostBlock = block[oppositeDirection[direction]]();
+    const lampPostBlock = block[oppositeDirectiones[direction]]();
     lampPostBlock.setPermutation(lampPostBlock.permutation.withState(`drop:${direction}`, false));
   }
 }
@@ -20,7 +20,7 @@ export class DropLampPostPlace {
     setBlock.setType("drop:lamp_post_base");
     topBlock.setType(itemStack.typeId);
     source.dimension.playSound("place.copper", setBlock.center());
-    decrementItemInHand(source);
+    itemDecreased(source);
   }
 }
 export class DropLampPostUpdate {
@@ -59,9 +59,9 @@ export class DropLampPostUpdate {
     if (item.typeId === blockId) {
       const topAirBlock = this.findTopAirBlock(block);
       if (!topAirBlock) return;
-      decrementItemInHand(player);
+      itemDecreased(player);
       topAirBlock.setType(blockId);
-      const sound = getBlockTypeVariant(blockId);
+      const sound = BlockTypeVariants(blockId);
       dimension.playSound(`break.${sound === "default" ? "" : sound + "_wood_"}hanging_sign`, block.center());
       return;
     }
@@ -71,12 +71,12 @@ export class DropLampPostUpdate {
       if (airBlocks.includes(blockLight.typeId)) {
         block.setPermutation(block.permutation.withState(`drop:${faceState}`, true));
         blockLight.setPermutation(
-          BlockPermutation.resolve(item.typeId.replace("minecraft:", "drop:lamp_post_"), {
+          BlockPermutation.resolve(item.typeId.replace("minecraft:", "pafa_outdoor:umbrella_"), {
             [DirectionalStates]: faceState,
           })
         );
         block.dimension.playSound("block.lantern.place", block.center());
-        decrementItemInHand(player);
+        itemDecreased(player);
       }
     }
   }

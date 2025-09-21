@@ -1,6 +1,13 @@
 import { world } from "@minecraft/server";
 
 var PafaSofaSystem = class {
+/**
+ * Called every tick to update the block's state.
+ * This function is responsible for updating the state of the block to
+ * reflect the state of the connected chairs.
+ * @param {BlockComponentTickEvent} event - The event that triggered this function
+ * @returns {void}
+ */
     onTick(event) {
         const { block } = event;
         const directionLook = block.permutation.getState('minecraft:cardinal_direction');
