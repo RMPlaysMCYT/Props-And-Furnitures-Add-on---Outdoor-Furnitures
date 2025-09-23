@@ -30,6 +30,12 @@
     },
     "pafa_outdoor_mat1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_mat1"
+    },
+    "pafa_outdoor_SleepingBed2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_sleepingbed2"
+    },
+    "pafa_outdoor_SleepingBed1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_sleepingbed"
     }
   }
 }
