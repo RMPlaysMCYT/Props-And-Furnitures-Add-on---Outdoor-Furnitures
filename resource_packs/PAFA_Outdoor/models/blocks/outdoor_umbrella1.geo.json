@@ -31,6 +31,7 @@
 				},
 				{
 					"name": "top",
+					"parent": "main",
 					"pivot": [0, 10, 0],
 					"cubes": [
 						{
@@ -265,6 +266,7 @@
 				},
 				{
 					"name": "middle",
+					"parent": "main",
 					"pivot": [0, 0, 0]
 				},
 				{
@@ -307,6 +309,7 @@
 				},
 				{
 					"name": "bottom",
+					"parent": "main",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
