@@ -1,83 +1,44 @@
-import { airBlocks, DirectionalStates, oppositeDirectiones, itemDecreased, BlockTypeVariants } from "./Others";
-/// Based From DECODROP ADD-ON BY EndXenocDev and Cereal Drop
-import { BlockPermutation, Direction, EquipmentSlot } from "@minecraft/server";
-
-export class DropBreakBlockPost {
-  onPlayerDestroy(e) {
-    const { destroyedBlockPermutation, block } = e;
-    const direction = destroyedBlockPermutation.getState(DirectionalStates);
-    const lampPostBlock = block[oppositeDirectiones[direction]]();
-    lampPostBlock.setPermutation(lampPostBlock.permutation.withState(`drop:${direction}`, false));
-  }
-}
-export class DropLampPostPlace {
-  onUseOn(e) {
-    const { block, source, itemStack, blockFace } = e;
-    const setBlock = airBlocks.includes(block.typeId) ? block : blockFace === Direction.Up ? block.above() : undefined;
-    if (!setBlock || !airBlocks.includes(setBlock.typeId)) return;
-    const topBlock = setBlock.above();
-    if (!airBlocks.includes(topBlock.typeId)) return;
-    setBlock.setType("drop:lamp_post_base");
-    topBlock.setType(itemStack.typeId);
-    source.dimension.playSound("place.copper", setBlock.center());
-    itemDecreased(source);
-  }
-}
-export class DropLampPostUpdate {
-  constructor() {
-    this.allowedBlocks = ["minecraft:lantern", "minecraft:soul_lantern"];
-    this.onPlace = this.onPlace.bind(this);
-    this.onPlayerDestroy = this.onPlayerDestroy.bind(this);
-    this.onPlayerInteract = this.onPlayerInteract.bind(this);
-  }
-  findTopAirBlock(block, maxHeightCheck = 32) {
-    if (maxHeightCheck <= 0) return undefined;
-    const blockAbove = block.above();
-    if (airBlocks.includes(blockAbove.typeId)) return blockAbove;
-    if (blockAbove.typeId !== block.typeId) return undefined;
-    return this.findTopAirBlock(blockAbove, maxHeightCheck - 1);
-  }
-  update(block) {
-    block.setPermutation(block.permutation.withState("drop:top", !block.above().hasTag("drop:lamp_post")));
-  }
-  updateNearestBlock(block) {
-    if (block.below()?.hasTag("drop:lamp_post")) this.update(block.below());
-  }
-  onPlace(e) {
-    this.update(e.block);
-    this.updateNearestBlock(e.block);
-  }
-  onPlayerDestroy(e) {
-    this.updateNearestBlock(e.block);
-  }
-  onPlayerInteract(e) {
-    const { block, face, dimension, player } = e;
-    if (face === Direction.Up || face === Direction.Down) return;
-    const item = player.getComponent("equippable")?.getEquipment(EquipmentSlot.Mainhand);
-    if (!item) return;
-    const blockId = block.typeId;
-    if (item.typeId === blockId) {
-      const topAirBlock = this.findTopAirBlock(block);
-      if (!topAirBlock) return;
-      itemDecreased(player);
-      topAirBlock.setType(blockId);
-      const sound = BlockTypeVariants(blockId);
-      dimension.playSound(`break.${sound === "default" ? "" : sound + "_wood_"}hanging_sign`, block.center());
-      return;
-    }
-    if (this.allowedBlocks.includes(item.typeId)) {
-      const faceState = face.toLowerCase();
-      const blockLight = block[faceState]();
-      if (airBlocks.includes(blockLight.typeId)) {
-        block.setPermutation(block.permutation.withState(`drop:${faceState}`, true));
-        blockLight.setPermutation(
-          BlockPermutation.resolve(item.typeId.replace("minecraft:", "pafa_outdoor:umbrella_"), {
-            [DirectionalStates]: faceState,
-          })
-        );
-        block.dimension.playSound("block.lantern.place", block.center());
-        itemDecreased(player);
-      }
+import { world } from "@minecraft/server";
+const UmbrellaConTag = "pafa_outdoor:umbrellaPillar";
+class UmbrellaConTag_Manager {
+  static updatePillarsAround(block) {
+    let aboveBlock = undefined;
+    try {
+      aboveBlock = block.above(1);
+    } catch {}
+    let belowBlock = undefined;
+    try {
+      belowBlock = block.below(1);
+    } catch {}
+    const blocks = [aboveBlock, belowBlock, block];
+    for (const pillar of blocks) {
+      if (pillar != undefined && pillar.hasTag(UmbrellaConTag)) this.updatePillar(pillar);
     }
   }
+  static updatePillar(block) {
+    let aboveBlock = undefined;
+    try {
+      aboveBlock = block.above(1);
+    } catch {}
+    let belowBlock = undefined;
+    try {
+      belowBlock = block.below(1);
+    } catch {}
+    if (aboveBlock != undefined) {
+      if (aboveBlock.hasTag(UmbrellaConTag)) {
+        block.setPermutation(block.permutation.withState("pafa_outdoor:top_bit", true));
+      } else block.setPermutation(block.permutation.withState("pafa_outdoor:top_bit", false));
+    } else block.setPermutation(block.permutation.withState("pafa_outdoor:top_bit", false));
+    if (belowBlock != undefined) {
+      if (belowBlock.hasTag(UmbrellaConTag)) {
+        block.setPermutation(block.permutation.withState("pafa_outdoor:bottom_bit", true));
+      } else block.setPermutation(block.permutation.withState("pafa_outdoor:bottom_bit", false));
+    } else block.setPermutation(block.permutation.withState("pafa_outdoor:bottom_bit", false));
+  }
 }
+world.afterEvents.playerBreakBlock.subscribe((data) => {
+  UmbrellaConTag_Manager.updatePillarsAround(data.block);
+});
+world.afterEvents.playerPlaceBlock.subscribe((data) => {
+  UmbrellaConTag_Manager.updatePillarsAround(data.block);
+});

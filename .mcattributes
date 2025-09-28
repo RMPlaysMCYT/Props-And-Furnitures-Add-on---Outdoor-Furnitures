@@ -1,3 +1,5 @@
 
 diagnostic.disable.behaviorpack.items.missing=true
 diagnostic.disable.behaviorpack.items.missing=true
+diagnostic.disable.molang.false=true
+diagnostic.disable.molang.false=true

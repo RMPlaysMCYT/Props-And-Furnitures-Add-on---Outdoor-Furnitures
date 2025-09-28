@@ -7,6 +7,7 @@
   "devDependencies": {
     "@minecraft/core-build-tasks": "^5.2.0",
     "eslint-plugin-minecraft-linting": "^2.0.1",
+    "javascript-obfuscator": "^4.1.1",
     "source-map": "^0.7.4",
     "ts-node": "^10.9.1",
     "typescript": "^5.6.2"
