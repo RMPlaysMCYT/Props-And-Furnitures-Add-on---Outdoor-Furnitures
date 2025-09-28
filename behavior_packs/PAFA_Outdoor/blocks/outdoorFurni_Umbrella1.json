@@ -13,13 +13,10 @@
     },
     "components": {
       "minecraft:collision_box": {
-        "origin": [-8, 0, -8],
-        "size": [8, 16, 8]
+        "origin": [-1.5, 0, -2],
+        "size": [3, 16, 4]
       },
-      "minecraft:selection_box": {
-        "origin": [-8, 0, -8],
-        "size": [8, 16, 8]
-      },
+      "minecraft:selection_box": true,
       "tag:pafa_outdoor:umbrellaPillar": {},
       "minecraft:geometry": {
         "identifier": "geometry.outdoor_umbrella1",
