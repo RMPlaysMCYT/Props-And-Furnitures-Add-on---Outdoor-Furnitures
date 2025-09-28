@@ -10,7 +10,7 @@
     "sourceMap": true,
     "pretty": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "allowUnreachableCode": true,
     "allowUnusedLabels": true,
     "noImplicitAny": true,
