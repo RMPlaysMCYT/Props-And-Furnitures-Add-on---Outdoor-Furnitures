@@ -5,7 +5,7 @@
     "description": "Adds Numerous Furnitures especially for outdoors grab your friends and enjoy\nREQUIRES Props And Furnitures Add-On",
     "uuid": "cb54b03f-b80a-4b54-9ead-9ed440678874",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 20, 30]
+    "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
