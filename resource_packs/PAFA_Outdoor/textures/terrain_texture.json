@@ -39,6 +39,9 @@
     },
     "pafa_outdoor_Umbrella1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1"
+    },
+    "pafa_outdoor_patio_sofa": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_chair"
     }
   }
 }

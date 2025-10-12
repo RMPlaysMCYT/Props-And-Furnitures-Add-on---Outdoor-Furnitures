@@ -1,0 +1,92 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pafa:outdoor_patio_flower_sofa",
+      "menu_category": {
+        "category": "construction",
+        "is_hidden_in_commands": false
+      },
+      "states": {
+        "pafa:outdoor_patio_flower_sofa_left": [false, true],
+        "pafa:outdoor_patio_flower_sofa_right": [false, true]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "y_rotation_offset": 180,
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:custom_components": ["pafa:sofa_sit_player_component", "pafa:sofa_patio_connections"],
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [2, 2]
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.outdoor_patio_flower_sofa",
+        "bone_visibility": {
+          "left": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0",
+          "right": "q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0",
+          "outdoor_patio_sofa_center": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0",
+          "outdoor_patio_sofa_center2": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 1 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 1",
+          "outdoor_patio_sofa_left": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 1",
+          "outdoor_patio_sofa_right": "q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_left') == 1"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pafa_outdoor_patio_sofa",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        }
+      },
+      "minecraft:loot": "loot_tables/outdoor_patio_flower_sofa.json",
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [8, 7, 8]
+      },
+      "minecraft:selection_box": true
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "tag:pafa:ChesterfieldNorth": {}
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "tag:pafa:ChesterfieldWest": {}
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "tag:pafa:ChesterfieldSouth": {}
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "tag:pafa:ChesterfieldEast": {}
+        }
+      }
+    ]
+  }
+}
