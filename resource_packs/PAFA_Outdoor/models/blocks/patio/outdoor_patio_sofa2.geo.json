@@ -348,6 +348,72 @@
 					]
 				},
 				{
+					"name": "outdoor_patio_sofa2_center2",
+					"pivot": [-5, -2, 5],
+					"cubes": [
+						{
+							"origin": [-6, 8, 4],
+							"size": [12, 12, 2],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [12, 12]},
+								"east": {"uv": [30, 34], "uv_size": [2, 12]},
+								"south": {"uv": [12, 14], "uv_size": [12, 12]},
+								"west": {"uv": [32, 34], "uv_size": [2, 12]},
+								"up": {"uv": [34, 30], "uv_size": [12, 2]},
+								"down": {"uv": [34, 36], "uv_size": [12, -2]}
+							}
+						},
+						{
+							"origin": [-6, 2, -8],
+							"size": [12, 2, 2],
+							"uv": {
+								"north": {"uv": [34, 36], "uv_size": [12, 2]},
+								"east": {"uv": [10, 44], "uv_size": [2, 2]},
+								"south": {"uv": [38, 0], "uv_size": [12, 2]},
+								"west": {"uv": [12, 44], "uv_size": [2, 2]},
+								"up": {"uv": [38, 2], "uv_size": [12, 2]},
+								"down": {"uv": [38, 6], "uv_size": [12, -2]}
+							}
+						},
+						{
+							"origin": [-6, 4, -8],
+							"size": [12, 4, 16],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [12, 4]},
+								"east": {"uv": [24, 0], "uv_size": [14, 4]},
+								"south": {"uv": [24, 12], "uv_size": [12, 4]},
+								"west": {"uv": [24, 4], "uv_size": [14, 4]},
+								"up": {"uv": [0, 0], "uv_size": [12, 14]},
+								"down": {"uv": [12, 14], "uv_size": [12, -14]}
+							}
+						},
+						{
+							"origin": [-6, 2, 6],
+							"size": [12, 2, 2],
+							"uv": {
+								"north": {"uv": [36, 8], "uv_size": [12, 2]},
+								"east": {"uv": [6, 44], "uv_size": [2, 2]},
+								"south": {"uv": [36, 10], "uv_size": [12, 2]},
+								"west": {"uv": [8, 44], "uv_size": [2, 2]},
+								"up": {"uv": [36, 12], "uv_size": [12, 2]},
+								"down": {"uv": [36, 16], "uv_size": [12, -2]}
+							}
+						},
+						{
+							"origin": [-6, 14, 6],
+							"size": [12, 2, 2],
+							"uv": {
+								"north": {"uv": [34, 22], "uv_size": [12, 2]},
+								"east": {"uv": [38, 42], "uv_size": [2, 2]},
+								"south": {"uv": [34, 24], "uv_size": [12, 2]},
+								"west": {"uv": [40, 42], "uv_size": [2, 2]},
+								"up": {"uv": [34, 26], "uv_size": [12, 2]},
+								"down": {"uv": [34, 30], "uv_size": [12, -2]}
+							}
+						}
+					]
+				},
+				{
 					"name": "outdoor_patio_sofa2_right",
 					"pivot": [-5, -2, 5],
 					"cubes": [
