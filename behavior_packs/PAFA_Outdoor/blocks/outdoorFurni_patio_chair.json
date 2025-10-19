@@ -2,7 +2,7 @@
   "format_version": "1.21.60",
   "minecraft:block": {
     "description": {
-      "identifier": "pafa_outdoor:outdoor_mat1",
+      "identifier": "pafa_outdoor:outdoor_patio_chair",
       "menu_category": {
         "category": "construction",
         "is_hidden_in_commands": false

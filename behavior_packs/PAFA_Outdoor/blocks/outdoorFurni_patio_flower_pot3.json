@@ -2,7 +2,7 @@
   "format_version": "1.21.60",
   "minecraft:block": {
     "description": {
-      "identifier": "pafa_outdoor:outdoor_mat1",
+      "identifier": "pafa_outdoor:outdoor_patio_flower_pot3",
       "menu_category": {
         "category": "construction",
         "is_hidden_in_commands": false
@@ -23,7 +23,7 @@
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.outdoor_mat1"
+        "identifier": "geometry.outdoor_patio_flower_pot3"
       },
       "minecraft:loot": "loot_tables/outdoor_furni_mat1.json",
       "minecraft:collision_box": {
