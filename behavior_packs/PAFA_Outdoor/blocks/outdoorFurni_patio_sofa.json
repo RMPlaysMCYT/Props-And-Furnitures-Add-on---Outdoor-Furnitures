@@ -2,7 +2,7 @@
   "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
-      "identifier": "pafa:outdoor_patio_flower_sofa",
+      "identifier": "pafa_outdoor:outdoor_patio_flower_sofa",
       "menu_category": {
         "category": "construction",
         "is_hidden_in_commands": false
