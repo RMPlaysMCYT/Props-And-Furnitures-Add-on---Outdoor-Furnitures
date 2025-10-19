@@ -19,7 +19,7 @@
         "*": {
           "render_method": "alpha_test",
           "ambient_occlusion": false,
-          "texture": "pafa_outdoor_mat1"
+          "texture": "pafa_outdoor_patio_flower_pot2"
         }
       },
       "minecraft:geometry": {

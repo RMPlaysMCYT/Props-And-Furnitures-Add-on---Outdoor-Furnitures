@@ -37,7 +37,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "pafa_outdoor_patio_sofa",
+          "texture": "pafa_outdoor_patio_sofa2",
           "render_method": "alpha_test",
           "ambient_occlusion": false,
           "face_dimming": true

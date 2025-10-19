@@ -41,7 +41,31 @@
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1"
     },
     "pafa_outdoor_patio_sofa": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_sofa"
+    },
+    "pafa_outdoor_patio_sofa2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_sofa2"
+    },
+    "pafa_outdoor_patio_sofa3": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_sofa3"
+    },
+    "pafa_outdoor_patio_chair": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_chair"
+    },
+    "pafa_outdoor_patio_flower_pot": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_flower_pot1"
+    },
+    "pafa_outdoor_patio_flower_pot2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_flower_pot2"
+    },
+    "pafa_outdoor_patio_flower_pot3": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_flower_pot3"
+    },
+    "pafa_outdoor_patio_table": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_table"
+    },
+    "pafa_outdoor_patio_mat": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_mat"
     }
   }
 }
