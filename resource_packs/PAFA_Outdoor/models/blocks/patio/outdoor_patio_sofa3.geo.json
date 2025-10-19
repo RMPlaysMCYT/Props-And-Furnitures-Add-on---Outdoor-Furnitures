@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -335,7 +335,16 @@
 						}
 					]
 				}
-			]
+			],
+			"item_display_transforms": {
+				"firstperson_righthand": {
+					"rotation": [0, 45, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.4, 0.4, 0.4],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				}
+			}
 		}
 	]
 }
