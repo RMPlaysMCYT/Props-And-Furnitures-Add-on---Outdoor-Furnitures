@@ -8,8 +8,8 @@
         "is_hidden_in_commands": false
       },
       "states": {
-        "pafa:outdoor_patio_flower_sofa_left": [false, true],
-        "pafa:outdoor_patio_flower_sofa_right": [false, true]
+        "pafa_outdoor:outdoor_patio_flower_sofa_left": [false, true],
+        "pafa_outdoor:outdoor_patio_flower_sofa_right": [false, true]
       },
       "traits": {
         "minecraft:placement_direction": {
@@ -19,7 +19,7 @@
       }
     },
     "components": {
-      "minecraft:custom_components": ["pafa:sofa_sit_player_component", "pafa:sofa_patio_connections"],
+      "minecraft:custom_components": ["pafa:sofa_sit_player_component", "pafa:sofa_patio_flower_connections"],
       "minecraft:tick": {
         "looping": true,
         "interval_range": [2, 2]
@@ -27,12 +27,12 @@
       "minecraft:geometry": {
         "identifier": "geometry.outdoor_patio_sofa",
         "bone_visibility": {
-          "left": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0",
-          "right": "q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0",
-          "outdoor_patio_sofa_center": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0",
-          "outdoor_patio_sofa_center2": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 1 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 1",
-          "outdoor_patio_sofa_left": "q.block_state('pafa:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_right') == 1",
-          "outdoor_patio_sofa_right": "q.block_state('pafa:outdoor_patio_flower_sofa_right') == 0 && q.block_state('pafa:outdoor_patio_flower_sofa_left') == 1"
+          "left": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_left') == 0",
+          "right": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_right') == 0",
+          "outdoor_patio_sofa_center": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_right') == 0",
+          "outdoor_patio_sofa_center2": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_left') == 1 && q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_right') == 1",
+          "outdoor_patio_sofa_left": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_left') == 0 && q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_right') == 1",
+          "outdoor_patio_sofa_right": "q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_right') == 0 && q.block_state('pafa_outdoor:outdoor_patio_flower_sofa_left') == 1"
         }
       },
       "minecraft:material_instances": {
