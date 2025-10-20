@@ -19,16 +19,16 @@
         "*": {
           "render_method": "alpha_test",
           "ambient_occlusion": false,
-          "texture": "pafa_outdoor_mat1"
+          "texture": "pafa_outdoor_patio_chair"
         }
       },
       "minecraft:geometry": {
-        "identifier": "geometry.outdoor_mat1"
+        "identifier": "geometry.outdoor_patio_chair"
       },
-      "minecraft:loot": "loot_tables/outdoor_furni_mat1.json",
+      "minecraft:loot": "loot_tables/outdoor_patio_chair.json",
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
-        "size": [16, 0, 16]
+        "size": [16, 7, 16]
       },
       "minecraft:selection_box": true,
       "tag:sittable": {},
@@ -40,7 +40,7 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
-      "minecraft:custom_components": ["pafa:sit_player_component"]
+      "minecraft:custom_components": ["pafa_outdoor:ChairInteract"]
     },
     "permutations": [
       {
