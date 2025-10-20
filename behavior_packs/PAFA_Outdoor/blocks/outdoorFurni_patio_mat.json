@@ -30,7 +30,10 @@
         "origin": [-8, 0, -8],
         "size": [16, 0, 16]
       },
-      "minecraft:selection_box": true,
+      "minecraft:selection_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 2, 16]
+      },
       "tag:sittable": {},
       "tag:chair": {},
       "tag:outdoor_chair": {},

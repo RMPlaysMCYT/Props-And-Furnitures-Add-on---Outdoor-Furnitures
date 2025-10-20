@@ -168,6 +168,48 @@
 					]
 				},
 				{
+					"name": "outdoor_patio_sofa3_center2",
+					"pivot": [-5, -2, -7],
+					"cubes": [
+						{
+							"origin": [-8, 5, -9],
+							"size": [16, 1, 18],
+							"uv": {
+								"north": {"uv": [40, 30], "uv_size": [18, 1]},
+								"east": {"uv": [40, 31], "uv_size": [18, 1]},
+								"south": {"uv": [40, 32], "uv_size": [18, 1]},
+								"west": {"uv": [40, 33], "uv_size": [18, 1]},
+								"up": {"uv": [0, 0], "uv_size": [18, 18]},
+								"down": {"uv": [0, 36], "uv_size": [18, -18]}
+							}
+						},
+						{
+							"origin": [-8, 6, -8],
+							"size": [16, 2, 16],
+							"uv": {
+								"north": {"uv": [0, 36], "uv_size": [16, 2]},
+								"east": {"uv": [0, 38], "uv_size": [16, 2]},
+								"south": {"uv": [38, 20], "uv_size": [16, 2]},
+								"west": {"uv": [38, 22], "uv_size": [16, 2]},
+								"up": {"uv": [18, 0], "uv_size": [16, 16]},
+								"down": {"uv": [18, 32], "uv_size": [16, -16]}
+							}
+						},
+						{
+							"origin": [-8, 8, 4],
+							"size": [16, 12, 4],
+							"uv": {
+								"north": {"uv": [18, 32], "uv_size": [16, 12]},
+								"east": {"uv": [34, 20], "uv_size": [4, 12]},
+								"south": {"uv": [34, 0], "uv_size": [16, 12]},
+								"west": {"uv": [34, 32], "uv_size": [4, 12]},
+								"up": {"uv": [34, 12], "uv_size": [16, 4]},
+								"down": {"uv": [34, 20], "uv_size": [16, -4]}
+							}
+						}
+					]
+				},
+				{
 					"name": "outdoor_patio_sofa3_left",
 					"pivot": [-5, -2, -7],
 					"cubes": [

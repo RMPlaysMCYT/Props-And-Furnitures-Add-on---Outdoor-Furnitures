@@ -8,6 +8,16 @@ tile.pafa_outdoor:outdoorChair_2.name=Outdoor Chair 2
 tile.pafa_outdoor:outdoor_table1.name=Outdoor Table 1
 tile.pafa_outdoor:outdoor_mat1.name=Outdoor Mat 1
 
+tile.pafa_outdoor:outdoor_patio_chair.name=[Props And Furnitures Add-On Outdoor] Patio Chair
+tile.pafa_outdoor:outdoor_patio_flower_pot1.name=[Props And Furnitures Add-On Outdoor] Patio Flower Pot 1
+tile.pafa_outdoor:outdoor_patio_flower_pot2.name=[Props And Furnitures Add-On Outdoor] Patio Flower Pot 2
+tile.pafa_outdoor:outdoor_patio_flower_pot3.name=[Props And Furnitures Add-On Outdoor] Patio Flower Pot 3
+tile.pafa_outdoor:outdoor_patio_mat.name=[Props And Furnitures Add-On Outdoor] Patio Mat
+tile.pafa_outdoor:outdoor_patio_flower_sofa.name=[Props And Furnitures Add-On Outdoor] Patio Sofa 1
+tile.pafa_outdoor:outdoor_patio_flower_sofa2.name=[Props And Furnitures Add-On Outdoor] Patio Sofa 2
+tile.pafa_outdoor:outdoor_patio_flower_sofa3.name=[Props And Furnitures Add-On Outdoor] Patio Sofa 3
+tile.pafa_outdoor:outdoor_patio_table.name=[Props And Furnitures Add-On Outdoor] Patio Table
+
 ## tile.pafa_outdoor:
 
 outdoor_chair.out_of_range=You're Too Far Away, Stay with Steve
