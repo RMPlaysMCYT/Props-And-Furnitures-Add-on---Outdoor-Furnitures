@@ -66,6 +66,12 @@
     },
     "pafa_outdoor_patio_mat": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_patio_mat"
+    },
+    "pafa_outdoor_table2": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_table2"
+    },
+    "pafa_outdoor_bench1": {
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_bench1"
     }
   }
 }
