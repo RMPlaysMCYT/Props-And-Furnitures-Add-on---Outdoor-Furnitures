@@ -1,0 +1,40 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pafa_outdoor:outdoorUmbrella_1_blue",
+      "states": {
+        "pafa_outdoor:top_bit": [false, true],
+        "pafa_outdoor:bottom_bit": [false, true]
+      },
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "origin": [-1.5, 0, -2],
+        "size": [3, 16, 4]
+      },
+      "minecraft:loot": "loot_tables/outdoor_furni_Umbrella.json",
+      "minecraft:selection_box": true,
+      "tag:pafa_outdoor:umbrellaPillar": {},
+      "minecraft:geometry": {
+        "identifier": "geometry.outdoor_umbrella1",
+        "bone_visibility": {
+          "top": "query.block_state('pafa_outdoor:top_bit') == false",
+          "bottom": "query.block_state('pafa_outdoor:bottom_bit') == false",
+          "middle_top": "query.block_state('pafa_outdoor:top_bit')",
+          "middle_bottom": "query.block_state('pafa_outdoor:bottom_bit')"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "texture": "pafa_outdoor_Umbrella1_blue"
+        }
+      }
+    }
+  }
+}

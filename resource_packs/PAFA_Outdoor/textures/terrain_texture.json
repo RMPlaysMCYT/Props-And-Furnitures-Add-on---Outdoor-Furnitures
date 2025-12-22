@@ -72,6 +72,18 @@
     },
     "pafa_outdoor_bench1": {
       "textures": "textures/PAFA_Outdoor/blocks/outdoor_bench1"
+    },
+    "pafa_outdoor_Umbrella1_white":{
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1_white"
+    },
+    "pafa_outdoor_Umbrella1_red":{
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1_red"
+    },
+    "pafa_outdoor_Umbrella1_green":{
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1_green"
+    },
+    "pafa_outdoor_Umbrella1_blue":{
+      "textures": "textures/PAFA_Outdoor/blocks/outdoor_umbrella1_blue"
     }
   }
 }
