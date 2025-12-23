@@ -3,13 +3,13 @@ import "./OutdoorChairComponent";
 // import "./ChairConnect";
 // import "./ConnectedChairs";
 import "./Umbrella1";
+import "./BookDocumentation";
 import * as vec3 from "vec3";
-
 
 world.afterEvents.playerSpawn.subscribe((event) => {
   const player = event.player;
   player.runCommand("give @s pafa_outdoor:book");
-})
+});
 // import { PAFA_OutDoorChairComponent } from "./OutdoorChairComponent";
 // world.beforeEvents.worldInitialize.subscribe((initEvent) => {
 //   // // block
