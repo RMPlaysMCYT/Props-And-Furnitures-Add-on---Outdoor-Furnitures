@@ -25,7 +25,7 @@
       "minecraft:geometry": {
         "identifier": "geometry.outdoor_barbecue_griller"
       },
-      "minecraft:loot": "loot_tables/outdoor_furni_table1.json",
+      "minecraft:loot": "loot_tables/outdoor_barbecue_griller.json",
       "minecraft:collision_box": {
         "origin": [-8, 0, -8],
         "size": [16, 16, 16]

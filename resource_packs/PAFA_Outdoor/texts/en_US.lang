@@ -6,6 +6,7 @@ tile.pafa_outdoor:outdoor_coffee_table2.name=[Props And Furnitures Add-On Outdoo
 tile.pafa_outdoor:outdoor_dinning_table1.name=[Props And Furnitures Add-On Outdoor] Dinning Table 1
 tile.pafa_outdoor:outdoorChair_2.name=[Props And Furnitures Add-On Outdoor] Chair 2
 tile.pafa_outdoor:outdoor_table1.name=[Props And Furnitures Add-On Outdoor] Table 1
+tile.pafa_outdoor:outdoor_table2.name=[Props And Furnitures Add-On Outdoor] Table 2
 tile.pafa_outdoor:outdoor_mat1.name=[Props And Furnitures Add-On Outdoor] Mat 1
 
 tile.pafa_outdoor:outdoor_patio_chair.name=[Props And Furnitures Add-On Outdoor] Patio Chair
@@ -19,6 +20,13 @@ tile.pafa_outdoor:outdoor_patio_flower_sofa3.name=[Props And Furnitures Add-On O
 tile.pafa_outdoor:outdoor_patio_table.name=[Props And Furnitures Add-On Outdoor] Patio Table
 tile.pafa_outdoor:outdoorSleepingbed1.name=[Props And Furnitures Add-On Outdoor] Sleeping Bed 1
 tile.pafa_outdoor:outdoorSleepingbed2.name=[Props And Furnitures Add-On Outdoor] Sleeping Bed 2
+tile.pafa_outdoor:outdoor_barbecue_grill.name=[Props And Furnitures Add-On Outdoor] Barbecue Grill
+tile.pafa_outdoor:outdoorbench1.name=[Props And Furnitures Add-On Outdoor] Bench 1
+tile.pafa_outdoor:outdoorUmbrella_1_blue.name=[Props And Furnitures Add-On Outdoor] Umbrella Blue
+tile.pafa_outdoor:outdoorUmbrella_1_green.name=[Props And Furnitures Add-On Outdoor] Umbrella Green
+tile.pafa_outdoor:outdoorUmbrella_1_red.name=[Props And Furnitures Add-On Outdoor] Umbrella Red
+tile.pafa_outdoor:outdoorUmbrella_1_white.name=[Props And Furnitures Add-On Outdoor] Umbrella White
+
 ## tile.pafa_outdoor:
 
 outdoor_chair.out_of_range=You're Too Far Away, Stay with Steve
