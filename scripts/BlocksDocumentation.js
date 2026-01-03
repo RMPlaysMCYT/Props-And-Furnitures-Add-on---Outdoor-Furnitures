@@ -1,7 +1,7 @@
 import { OutDoorBookInit } from "./BookDocumentation";
 import { ActionFormData } from "@minecraft/server-ui";
 
-export function BlocksBlocksDocumentation() {
+export function BlocksDocumentation() {
   const form = new ActionFormData();
   form.title("Outdoor Expansion Blocks Documentation");
   form.body(
