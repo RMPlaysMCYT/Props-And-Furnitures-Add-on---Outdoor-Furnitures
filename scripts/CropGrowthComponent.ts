@@ -43,7 +43,6 @@ export class CropGrowthComponent implements BlockCustomComponent {
     CropGrowthComponent.tryGrowBlock(arg.block);
   }
 
-  // fertilization growth with bone meal
   onPlayerInteract(arg: BlockComponentPlayerInteractEvent) {
     if (arg.player === undefined) {
       return;
